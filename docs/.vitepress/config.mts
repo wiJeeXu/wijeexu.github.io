@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "weJee Project",
+  title: "weJee page",
   description: "daily log",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
