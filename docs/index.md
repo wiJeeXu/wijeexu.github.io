@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "weJee Project"
+  name: "weJee Page"
   text: "daily log"
   tagline: My great project tagline
   actions:
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
