@@ -2,22 +2,27 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "weJee page",
+  title: "weJee 个人主页",
   description: "daily log",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "主页", link: "/" },
+      {
+        text: "公司项目",
+        items: [
+          {
+            text: "pos小程序",
+            link: "/company/date-component",
+          },
+        ],
+      },
     ],
 
     sidebar: [
       {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
+        text: "pos小程序",
+        items: [{ text: "日期组件", link: "/company/date-component" }],
       },
     ],
 

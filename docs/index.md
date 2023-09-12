@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "weJee Page"
-  text: "daily log"
+  name: "weJee 个人主页"
+  text: "日志记录"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: pos小程序
+      link: /company/date-component
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
   - title: Feature A
