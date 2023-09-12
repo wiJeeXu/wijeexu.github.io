@@ -8,7 +8,7 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: pos小程序
+      text: 公司项目
       link: /company/date-component
     # - theme: alt
     #   text: API Examples
