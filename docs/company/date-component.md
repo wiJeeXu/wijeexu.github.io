@@ -6,12 +6,8 @@
   @onSure="onSure"
   ref="dateComponentInstance"
 />
-}
-<button @click="last">
-  上一天<button>
-    <button @click="next">下一天<button></button></button>
-  </button>
-</button>
+<button @click="last">上一天</button>
+<button @click="next">下一天</button>
 ```
 
 ```js
