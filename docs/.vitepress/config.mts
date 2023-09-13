@@ -17,6 +17,15 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "后端",
+        items: [
+          {
+            text: "node.js",
+            link: "backend/node",
+          },
+        ],
+      },
     ],
 
     sidebar: [

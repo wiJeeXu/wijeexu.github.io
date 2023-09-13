@@ -10,9 +10,9 @@ hero:
     - theme: brand
       text: 公司项目
       link: /company/date-component
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: 后端
+      link: /backend/node
 
 features:
   - title: Feature A
