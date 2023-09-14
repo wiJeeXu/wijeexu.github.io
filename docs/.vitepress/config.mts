@@ -33,6 +33,10 @@ export default defineConfig({
         text: "pos小程序",
         items: [{ text: "日期组件", link: "/company/date-component" }],
       },
+      {
+        text: "后端",
+        items: [{ text: "node.js", link: "/backend/node" }],
+      },
     ],
 
     socialLinks: [
