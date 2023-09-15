@@ -6,7 +6,8 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --open",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "dev": "npm run docs:dev"
   },
   "directories": {
     "doc": "docs"

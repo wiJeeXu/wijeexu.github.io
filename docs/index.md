@@ -13,7 +13,9 @@ hero:
     - theme: alt
       text: 后端
       link: /backend/node
-
+    - theme: alt
+      text: 前端
+      link: /frontend/cli
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

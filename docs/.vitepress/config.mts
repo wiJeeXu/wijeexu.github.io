@@ -26,6 +26,15 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "前端",
+        items: [
+          {
+            text: "脚手架",
+            link: "frontend/cli",
+          },
+        ],
+      },
     ],
 
     sidebar: [
@@ -36,6 +45,10 @@ export default defineConfig({
       {
         text: "后端",
         items: [{ text: "node.js", link: "/backend/node" }],
+      },
+      {
+        text: "前端",
+        items: [{ text: "脚手架", link: "/frontend/cli" }],
       },
     ],
 
