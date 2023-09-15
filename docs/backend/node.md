@@ -31,4 +31,4 @@ setImmediate 延迟调用 2
 2. 非性能 javascript (分配内存策略)
 
 - Buffer 内存不是通过 V8 分配,属于堆外内存
-- node 在进程启动时就已经加载了它,并放在全局对象(global),无需 require 即可直接使用
+- Buffer node 在进程启动时就已经加载了它,并放在全局对象(global),无需 require 即可直接使用
