@@ -35,6 +35,15 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "其他",
+        items: [
+          {
+            text: "有趣",
+            link: "other/index",
+          },
+        ],
+      },
     ],
 
     sidebar: [
