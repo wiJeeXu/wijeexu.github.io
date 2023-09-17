@@ -33,6 +33,10 @@ export default defineConfig({
             text: "脚手架",
             link: "frontend/cli",
           },
+          {
+            text: "webpack",
+            link: "frontend/module/webpack",
+          },
         ],
       },
       {
@@ -57,7 +61,10 @@ export default defineConfig({
       },
       {
         text: "前端",
-        items: [{ text: "脚手架", link: "/frontend/cli" }],
+        items: [
+          { text: "脚手架", link: "/frontend/cli" },
+          { text: "webpack", link: "/frontend/module/webpack" },
+        ],
       },
       {
         text: "其他",
