@@ -59,6 +59,10 @@ export default defineConfig({
         text: "前端",
         items: [{ text: "脚手架", link: "/frontend/cli" }],
       },
+      {
+        text: "其他",
+        items: [{ text: "内网穿透", link: "/other/index" }],
+      },
     ],
 
     socialLinks: [
