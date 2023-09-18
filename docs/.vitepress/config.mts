@@ -47,8 +47,12 @@ export default defineConfig({
         text: "其他",
         items: [
           {
-            text: "有趣",
+            text: "内网穿透",
             link: "other/index",
+          },
+          {
+            text: "算法",
+            link: "other/arithmetic",
           },
         ],
       },
@@ -78,7 +82,10 @@ export default defineConfig({
       },
       {
         text: "其他",
-        items: [{ text: "内网穿透", link: "/other/index" }],
+        items: [
+          { text: "内网穿透", link: "/other/index" },
+          { text: "算法", link: "/other/arithmetic" },
+        ],
       },
     ],
 
