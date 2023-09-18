@@ -24,6 +24,10 @@ export default defineConfig({
             text: "node.js",
             link: "backend/node",
           },
+          {
+            text: "koa",
+            link: "backend/koa",
+          },
         ],
       },
       {
@@ -57,7 +61,13 @@ export default defineConfig({
       },
       {
         text: "后端",
-        items: [{ text: "node.js", link: "/backend/node" }],
+        items: [
+          { text: "node.js", link: "/backend/node" },
+          {
+            text: "koa",
+            link: "/backend/koa",
+          },
+        ],
       },
       {
         text: "前端",
