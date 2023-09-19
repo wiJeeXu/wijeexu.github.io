@@ -24,7 +24,7 @@ yarn 的做法是把所有包在 node_modules 拍平(扁平化),但是依然会�
 ## pnpm
 
 ![pnpm](image-3.png)
-最佳实践
+最佳实现
 pnpm 是把所有包拍平存储到磁盘仓库内, node_modules 依赖快捷方式指向仓库,这样不会存在幻影依赖问题
 
 ## 硬连接、软连接
