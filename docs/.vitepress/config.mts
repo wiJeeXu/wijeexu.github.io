@@ -41,6 +41,10 @@ export default defineConfig({
             text: "webpack",
             link: "frontend/module/webpack",
           },
+          {
+            text: "pnpm",
+            link: "frontend/pnpm",
+          },
         ],
       },
       {
@@ -78,6 +82,7 @@ export default defineConfig({
         items: [
           { text: "脚手架", link: "/frontend/cli" },
           { text: "webpack", link: "/frontend/module/webpack" },
+          { text: "pnpm", link: "/frontend/pnpm" },
         ],
       },
       {
