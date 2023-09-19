@@ -50,3 +50,43 @@ import("./module.js").then((module) => {});
 ```js
 export { name, age } from "module";
 ```
+
+## webpack
+
+- webpack 运行原理 IIFE
+
+  1. 自执行函数
+  2. `__webpack_modules__` 对象 key 为文件路径, value 为函数
+
+  ```js
+  var __webpack_modules__ = {
+    "./src/index.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      eval("代码");
+    },
+  };
+  ```
+
+  3. 定义`__webpack_require__`函数
+
+  ```js
+  function __webpack_require__(moduleId) {
+    // 1. 判断是否有缓存，有直接return
+    // 2. __webpack_modules__[moduleId](module, module.exports, __webpack_require__))
+    return module.exports;
+  }
+  ```
+
+  4.` __webpack_require__('./src/index.js')` 主入口运行`__webpack_require__`函数
+
+- webpack 对 vue3 整体项目
+
+### loader
+
+文件预处理 loader
+
+- loader 原理
+- 写一个 loader 插件
