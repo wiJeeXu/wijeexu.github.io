@@ -103,7 +103,7 @@ export { name, age } from "module";
 const marked = require("marked");
 module.exports = function (source) {
   const html = marked.parse(source);
-  return `export default ${JSON.stringify(html)}`;
+  return `export default ${JSON.stringify(html)}`; // 最终需要返回JS export default 或者 module.exports
 };
 ```
 
