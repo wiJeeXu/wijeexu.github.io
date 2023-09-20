@@ -86,7 +86,46 @@ export { name, age } from "module";
 
 ### loader
 
-文件预处理 loader
+资源文件输入输出 loader
 
-- loader 原理
-- 写一个 loader 插件
+假设开发 loader 把 markdown 文件导入转换 html 的 markdown-loader.js
+
+```js
+{
+  test: /.md$/,
+  use:  {
+    loader: "./markdown-loader.js"
+  },
+},
+```
+
+```js
+const marked = require("marked");
+module.exports = function (source) {
+  const html = marked.parse(source);
+  return `export default ${JSON.stringify(html)}`;
+};
+```
+
+考虑到一个文件可以使用多个 loader 可以改成
+
+```js
+{
+  test: /.md$/,
+  use:  ['html-loader', "./markdown-loader.js"]
+},
+```
+
+```js
+const marked = require("marked");
+module.exports = function (source) {
+  const html = marked.parse(source);
+  return html;
+};
+```
+
+效果与上面一致, loader 的执行顺序是数组的最右边执行
+
+### 插件
+
+plugin 做其他事情,比如删除 dist，移动文件
