@@ -65,10 +65,12 @@ export default defineConfig({
     sidebar: [
       {
         text: "pos小程序",
+        collapsed: true,
         items: [{ text: "日期组件", link: "/company/date-component" }],
       },
       {
         text: "后端",
+        collapsed: true,
         items: [
           { text: "node.js", link: "/backend/node" },
           {
@@ -79,6 +81,7 @@ export default defineConfig({
       },
       {
         text: "前端",
+        collapsed: true,
         items: [
           { text: "脚手架", link: "/frontend/cli" },
           { text: "webpack", link: "/frontend/module/webpack" },
@@ -87,6 +90,7 @@ export default defineConfig({
       },
       {
         text: "其他",
+        collapsed: true,
         items: [
           { text: "内网穿透", link: "/other/index" },
           { text: "算法", link: "/other/arithmetic" },
