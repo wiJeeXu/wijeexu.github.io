@@ -128,4 +128,29 @@ module.exports = function (source) {
 
 ### 插件
 
-plugin 做其他事情,比如删除 dist，移动文件
+plugin 做其他事情,比如删除 dist，移动文件等  
+假设我们要做一个清除打包后的`/****/`注释的插件
+
+```js
+const pluginName = "MyPlugin";
+class MyPlugin {
+  apply(compiler) {
+    console.log("构建启动");
+    compiler.hooks.emit.tap(pluginName, (params) => {
+      for (const name in params.assets) {
+        if (name.endsWith(".js")) {
+          const contents = params.assets[name].source();
+          const withoutComments = contents.replace(/\/\*\*+\*\//g, "");
+          params.assets[name] = {
+            source: () => withoutComments,
+            size: () => withoutComments.length,
+          };
+        }
+      }
+    });
+  }
+}
+```
+
+多个 plugin 执行顺序是数组左边开始执行，这点和 loader 不太一样  
+hooks 有很多，具体要去官网看详情
