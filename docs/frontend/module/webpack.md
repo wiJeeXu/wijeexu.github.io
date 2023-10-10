@@ -130,7 +130,8 @@ module.exports = function (source) {
 
 效果与上面一致, loader 的执行顺序是数组的最右边执行
 
-webpack 有许多 loader, ,这些 loader 我们可以走很多渠道去查找
+webpack use 可以用 loader,这些 loader 我们可以走很多渠道去查找
+如果有多个 loader 需要使用要用 use,当然也可以用 loader 关键词,如果只是一个 loader 并且需要配置选项也可以用 loader
 
 ### 插件
 
