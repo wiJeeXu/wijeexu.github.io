@@ -82,8 +82,6 @@ export { name, age } from "module";
 
   4.` __webpack_require__('./src/index.js')` 主入口运行`__webpack_require__`函数
 
-- webpack 对 vue3 整体项目
-
 ### loader
 
 资源文件输入输出 loader
@@ -109,6 +107,12 @@ module.exports = function (source) {
 
 考虑到一个文件可以使用多个 loader 可以改成
 
+1. [官网](https://webpack.docschina.org/loaders)
+2. [Awesome Webpack github 仓库](https://github.com/webpack-contrib/awesome-webpack)
+3. npm 官网搜索 webpack-loader
+4. 搜索引擎或者 chatgpt
+5. github 搜索 webpack loader 关键词
+
 ```js
 {
   test: /.md$/,
@@ -125,6 +129,8 @@ module.exports = function (source) {
 ```
 
 效果与上面一致, loader 的执行顺序是数组的最右边执行
+
+webpack 有许多 loader, ,这些 loader 我们可以走很多渠道去查找
 
 ### 插件
 
@@ -152,5 +158,12 @@ class MyPlugin {
 }
 ```
 
-多个 plugin 执行顺序是数组左边开始执行，这点和 loader 不太一样  
+正常执行是自左向右,实际是根据 plugin 的钩子,这点和 loader 不一样
 hooks 有很多，具体要去官网看详情
+
+webpack 有许多插件,这些插件我们可以走很多渠道去查找
+
+1. [官网](https://webpack.docschina.org/plugins)
+2. [Awesome Webpack github 仓库](https://github.com/webpack-contrib/awesome-webpack)
+3. npm 官网搜索 webpack-plugin
+4. 搜索引擎或者 chatgpt
