@@ -58,6 +58,7 @@ export default defineConfig({
             text: "算法",
             link: "other/arithmetic",
           },
+          { text: "linux", link: "/other/linux" },
         ],
       },
     ],
@@ -94,6 +95,7 @@ export default defineConfig({
         items: [
           { text: "内网穿透", link: "/other/index" },
           { text: "算法", link: "/other/arithmetic" },
+          { text: "linux", link: "/other/linux" },
         ],
       },
     ],
