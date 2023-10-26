@@ -34,6 +34,10 @@ export default defineConfig({
         text: "前端",
         items: [
           {
+            text: "模块化",
+            link: "frontend/module/module",
+          },
+          {
             text: "脚手架",
             link: "frontend/cli",
           },
@@ -84,6 +88,7 @@ export default defineConfig({
         text: "前端",
         collapsed: true,
         items: [
+          { text: "模块化", link: "/frontend/module/module" },
           { text: "脚手架", link: "/frontend/cli" },
           { text: "webpack", link: "/frontend/module/webpack" },
           { text: "pnpm", link: "/frontend/pnpm" },
